@@ -1,0 +1,24 @@
+{
+	"version": 3,
+	"sources": [
+		"../../src/js/main.js"
+	],
+	"names": [
+		"onAnimationComplete",
+		"console",
+		"log",
+		"document",
+		"getElementById",
+		"classList",
+		"add",
+		"window",
+		"onload",
+		"Vivus",
+		"duration",
+		"this"
+	],
+	"mappings": "aAUA,SAASA,sBACRC,QAAQC,IAAI,0BAEZC,SAASC,eAAe,WAAWC,UAAUC,IAAI,UAblDC,OAAOC,OAAS,WACf,IAAIC,MACH,OAECC,SAAU,KAEXC,KAAKX",
+	"sourcesContent": [
+		"window.onload = function () {\n\tnew Vivus(\n\t\t'mtn',\n\t\t{\n\t\t\tduration: 200,\n\t\t},\n\t\tthis.onAnimationComplete\n\t);\n};\n\nfunction onAnimationComplete() {\n\tconsole.log('Animation has finished');\n\n\tdocument.getElementById('cb-text').classList.add('active');\n}\n"
+	]
+}

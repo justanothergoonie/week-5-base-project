@@ -1,0 +1,13 @@
+section {
+    max-width: 400px;
+    font-size: 2rem;
+}
+#cb-text {
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(50px);
+    &.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
