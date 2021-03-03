@@ -1,2 +1,11 @@
-"use strict";var inview=new Waypoint.Inview({element:$("#mountain-icon")[0],enter:function(){document.getElementById("mountain-icon").classList.add("active")}});
+"use strict";
+
+var waypoint = new Waypoint({
+  element: document.getElementById('mountain-icon'),
+  handler: function handler() {
+    var mtn = document.getElementById('mountain-icon');
+    mtn.classList.add('active');
+  },
+  offset: 'bottom-in-view'
+});
 //# sourceMappingURL=main.js.map
